@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="./scripts/main.js"></script>
+</head>
+<body class="grid place-content-center min-h-screen">
+  <article class="text-center">
+    <div class="bg-pink-500 p-6 rounded-lg shadow-lg">
+      <form id="formData"  onsubmit="formDataSubmit(event)">
+          <fieldset class="mb-4">
+              <legend class="text-lg font-medium mb-4">What does HTML stand for?</legend>
+              
+              <div class="flex items-center mb-2">
+                  <input type="radio" id="option1" name="HTML" value="0" class="mr-2">
+                  <label for="option1" class="text-gray-700">Hyperlink Transfer Media Language</label>
+              </div>
+              
+              <div class="flex items-center mb-2">
+                  <input type="radio" id="option2" name="HTML" value="1" class="mr-2">
+                  <label for="option2" class="text-gray-700">Hypertext Markup Language</label>
+              </div>
+              
+              <div class="flex items-center mb-2">
+                  <input type="radio" id="option3" name="HTML" value="0" class="mr-2">
+                  <label for="option3" class="text-gray-700">Hypertext Marking Language</label>
+              </div>
+          </fieldset>
+          <fieldset class="mb-4">
+            <legend class="text-lg font-medium mb-4">What does CSS stand for?</legend>
+            
+            <div class="flex items-center mb-2">
+                <input type="radio" id="option1" name="CSS" value="0" class="mr-2">
+                <label for="option1" class="text-gray-700">Cascading Sheet Style</label>
+            </div>
+            
+            <div class="flex items-center mb-2">
+                <input type="radio" id="option2" name="CSS" value="0" class="mr-2">
+                <label for="option2" class="text-gray-700">Canvasing Style Sheet</label>
+            </div>
+            
+            <div class="flex items-center mb-2">
+                <input type="radio" id="option3" name="CSS" value="1" class="mr-2">
+                <label for="option3" class="text-gray-700">Cascading Style Sheet</label>
+            </div>
+        </fieldset>
+        <fieldset class="mb-4">
+          <legend class="text-lg font-medium mb-4">What is tailwind css?</legend>
+          
+          <div class="flex items-center mb-2">
+              <input type="radio" id="option1" name="TAILWIND" value="1" class="mr-2">
+              <label for="option1" class="text-gray-700">Unopinionated low level css utility classes</label>
+          </div>
+          
+          <div class="flex items-center mb-2">
+              <input type="radio" id="option2" name="TAILWIND" value="0" class="mr-2">
+              <label for="option2" class="text-gray-700">tools for beautification, lower than vanilla css</label>
+          </div>
+          
+          <div class="flex items-center mb-2">
+              <input type="radio" id="option3" name="TAILWIND" value="0" class="mr-2">
+              <label for="option3" class="text-gray-700">means of styling without the use of utility classes</label>
+          </div>
+      </fieldset>
+          <button id="btn" type="submit" class="px-4 py-2 bg-pink-600 text-white rounded-full shadow-xl hover:text-opacity-50">Submit</button>
+      </form>
+    </div>
+  </article>
+</body>
+</html>
